@@ -1,6 +1,5 @@
 # ЗАВДАННЯ ВІДПОВІДНО МОГО ВАРІАНТУ
 # ЗАВДАННЯ 2
-from traceback import print_tb
 
 a = input("Enter number: ")
 
