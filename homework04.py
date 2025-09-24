@@ -45,3 +45,37 @@ print(calculate_average_by_key([{"name":"Ann","score":80},{"name":"Bob","score":
 
 # TASK 14
 
+def remove_stopwords(w, sw):
+    reslt = []
+    for word in w:
+        if word not in sw:
+            reslt.append(word)
+    return reslt
+
+print(remove_stopwords(["this","is","a","test"],["is","a"]))
+
+# TASk 15
+
+def merge_lists_unique(l1, l2):
+    cd = l1 +l2
+    uq = []
+    for item in cd:
+        if item not in uq:
+            uq.append(item)
+    return uq
+
+print(merge_lists_unique([1,2,3],[3,4]))
+
+#TASK 16
+
+def generate_report(d, f):
+    res = []
+    for item in d:
+        new_i = {}
+        for field in f:
+            if field in item:
+                new_i[field] = item[field]
+        res.append(new_i)
+    return res
+
+print(generate_report([{"name":"Ann","age":20,"score":90}],["name","score"]))
