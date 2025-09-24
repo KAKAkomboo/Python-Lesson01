@@ -27,3 +27,21 @@ def split_students_by_group(st):
     return gps
 
 print(split_students_by_group({"Ann": "A", "Bob": "B", "Kate": "A"}))
+
+# TASK 13
+
+def calculate_average_by_key(items, key):
+    t = 0
+    c = 0
+    for item in items:
+        if key in item:
+            t += item[key]
+            c +=1
+    if c == 0:
+        return 0
+    return t/c
+
+print(calculate_average_by_key([{"name":"Ann","score":80},{"name":"Bob","score":60}],"score"))
+
+# TASK 14
+
